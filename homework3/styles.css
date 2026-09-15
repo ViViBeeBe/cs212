@@ -1,0 +1,74 @@
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+#top
+{
+    color: purple;
+    font-size: xx-large;
+}
+
+.page
+{
+    display: grid;
+    grid-template-columns: 120px;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+
+}
+
+
+.header
+{
+    
+    order: 2;
+    grid-column: 2;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.sidebar{order: 1}
+.body
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    flex-direction: column;
+    order: 3;
+    grid-column: 2;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.education
+{
+    border-radius: 15px;
+    background-color: rgb(200, 200, 244);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.footer
+{
+    order: 4;
+    grid-column-start: 2;
+    border-top: 1px solid black;
+    position: fixed;
+    height: 150px;
+    width: 100000000px;
+    bottom: 0;
+    background-color: white;
+}
+
+.download
+{
+    display: grid;
+    grid-template-columns: auto;
+    background-size: auto;
+    
+    background-color: blue;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
